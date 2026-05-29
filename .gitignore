@@ -1,0 +1,8 @@
+item.json
+key.json
+test-event.json
+response.json
+trust-policy.json
+*.zip
+__pycache__/
+.env

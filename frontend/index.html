@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zero-To-Hero Habit Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Zero-To-Hero</h1>
+    <p>Track your habits. Build your future.</p>
+
+    <form id="habitForm">
+      <label for="userId">User ID</label>
+      <input type="text" id="userId" placeholder="e.g. user-001" required>
+
+      <label for="habitName">Habit Name</label>
+      <input type="text" id="habitName" placeholder="e.g. Morning Run" required>
+
+      <label for="frequency">Frequency</label>
+      <select id="frequency">
+        <option value="daily">Daily</option>
+        <option value="weekly">Weekly</option>
+      </select>
+
+      <button type="submit">Create Habit</button>
+    </form>
+
+    <div id="message"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

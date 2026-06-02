@@ -28,6 +28,8 @@ Lambda functions can't normally interact with DynamoDB unless given permissions.
 I created a iam role for lambda to be given full access
 In development, it's fine to use full access but will later specify <- 
 
+arn:aws:iam::343253677879:role/habits-lambda-role
+
 I then created the function that will take the json payload and convert it 
 for dynamodb to store. 
 I attach to the lambda function the iam role.

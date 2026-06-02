@@ -8,32 +8,42 @@
 </head>
 <body>
   <div class="container">
-    <h1>Zero-To-Hero</h1>
-    <p>Track your habits. Build your future.</p>
 
-    <form id="habitForm">
-      <label for="userId">User ID</label>
-      <input type="text" id="userId" placeholder="e.g. user-001" required>
+    <div class="app-header">
+      <h1>Zero-To-<span>Hero</span></h1>
+      <p class="tagline">Track your habits. Build your future.</p>
+    </div>
 
-      <label for="habitName">Habit Name</label>
-      <input type="text" id="habitName" placeholder="e.g. Morning Run" required>
+    <div class="form-section">
+      <h2>Create a habit</h2>
 
-      <label for="frequency">Frequency</label>
-      <select id="frequency">
-        <option value="daily">Daily</option>
-        <option value="weekly">Weekly</option>
-      </select>
+      <form id="habitForm">
+        <label for="userId">User ID</label>
+        <input type="text" id="userId" placeholder="e.g. user-001" required>
 
-      <button type="submit">Create Habit</button>
-    </form>
+        <label for="habitName">Habit Name</label>
+        <input type="text" id="habitName" placeholder="e.g. Morning Run" required>
 
-    <div id="message"></div>
+        <label for="frequency">Frequency</label>
+        <select id="frequency">
+          <option value="daily">Daily</option>
+          <option value="weekly">Weekly</option>
+        </select>
 
-    <div id="habitList">
-      <h2>My Habits</h2>
-      <button id="loadHabits">Load My Habits</button>
+        <button type="submit" class="btn-primary">Create Habit</button>
+      </form>
+
+      <div id="message"></div>
+    </div>
+
+    <div class="habits-section">
+      <div class="habits-header">
+        <h2>My Habits</h2>
+        <button id="loadHabits" class="btn-secondary">Load Habits</button>
+      </div>
       <ul id="habits"></ul>
     </div>
+
   </div>
 
   <script src="app.js"></script>

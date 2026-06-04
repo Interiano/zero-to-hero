@@ -1,14 +1,12 @@
 # Zero-To-Hero: Cloud Engineer App
 
-A serverless habit tracking application built on AWS during a self-directed 
-cloud engineering career transition.
+Serverless Crud Application - habit tracker
 
 ## Stack
 - AWS Lambda
 - Amazon API Gateway
 - Amazon DynamoDB
 - Amazon EventBridge
-- Amazon SES
 - Amazon S3
 - Amazon CloudFront
 
@@ -64,3 +62,12 @@ sends to API Gateway > lambda > dynamodb > responce back to hmtl
 testing and came across glitch
 CORS - needed to allow a local domain request to reach the API Gateway
 security reasons, just needed to enabled on AWS console
+
+## Sprint 4 - added features, CloudFront, S3 files
+added two new features: the ability to delete and the view habits
+established CloudFront 
+placed files in a S3
+gave each one an endpoint
+post for createhabit lambda
+get for  gethabit lambda
+delete for deletehabit lambda
